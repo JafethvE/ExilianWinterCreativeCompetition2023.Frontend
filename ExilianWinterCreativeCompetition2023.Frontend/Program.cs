@@ -13,7 +13,7 @@ namespace ExilianWinterCreativeCompetition2023.Frontend
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new ExilianWinterCreativeCompetition2023Form());
         }
     }
 }
