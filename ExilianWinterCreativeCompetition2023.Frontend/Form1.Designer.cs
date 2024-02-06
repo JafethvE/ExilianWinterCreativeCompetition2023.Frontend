@@ -29,12 +29,15 @@ namespace ExilianWinterCreativeCompetition2023.Frontend
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.AnimalListBox = new System.Windows.Forms.ListBox();
             this.NameTextBox = new System.Windows.Forms.TextBox();
             this.DescriptionTextBox = new System.Windows.Forms.TextBox();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.SaveAsNewButton = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // AnimalListBox
@@ -53,6 +56,7 @@ namespace ExilianWinterCreativeCompetition2023.Frontend
             this.NameTextBox.Name = "NameTextBox";
             this.NameTextBox.Size = new System.Drawing.Size(258, 20);
             this.NameTextBox.TabIndex = 1;
+            this.NameTextBox.Validated += new System.EventHandler(this.NameTextBox_Validating);
             // 
             // DescriptionTextBox
             // 
@@ -61,6 +65,7 @@ namespace ExilianWinterCreativeCompetition2023.Frontend
             this.DescriptionTextBox.Name = "DescriptionTextBox";
             this.DescriptionTextBox.Size = new System.Drawing.Size(258, 105);
             this.DescriptionTextBox.TabIndex = 2;
+            this.DescriptionTextBox.Validated += new System.EventHandler(this.DescriptionTextBox_Validating);
             // 
             // DeleteButton
             // 
@@ -92,11 +97,15 @@ namespace ExilianWinterCreativeCompetition2023.Frontend
             this.UpdateButton.UseVisualStyleBackColor = true;
             this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
             // ExilianWinterCreativeCompetition2023Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(423, 187);
+            this.ClientSize = new System.Drawing.Size(454, 187);
             this.Controls.Add(this.UpdateButton);
             this.Controls.Add(this.SaveAsNewButton);
             this.Controls.Add(this.DeleteButton);
@@ -106,6 +115,7 @@ namespace ExilianWinterCreativeCompetition2023.Frontend
             this.Name = "ExilianWinterCreativeCompetition2023Form";
             this.Text = "Exilian Winter Creative Competition 2023";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,6 +129,7 @@ namespace ExilianWinterCreativeCompetition2023.Frontend
         private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Button SaveAsNewButton;
         private System.Windows.Forms.Button UpdateButton;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }
 
