@@ -19,7 +19,7 @@ namespace ExilianWinterCreativeCompetition2023.Frontend
             InitializeComponent();
             restController = new RestController();
             nameRegex = new Regex("^[a-zA-Z0-9\\s]{1,255}$");
-            descriptionRegex = new Regex("^[a-zA-Z0-9\\s.,:;']{1,255}$");
+            descriptionRegex = new Regex("^[a-zA-Z0-9\\s.,:'$&()!]{1,255}$");
         }
 
         private void Form1_Load(object sender, System.EventArgs e)
