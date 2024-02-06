@@ -51,7 +51,7 @@ namespace ExilianWinterCreativeCompetition2023.Frontend
             if(selectedAnimal != null)
             {
                 HttpResponseMessage message = restController.DeleteAnimal(selectedAnimal).Result;
-                MessageBox.Show(message.Content.ReadAsStringAsync().Result, message.Content.ReadAsStringAsync().Result);
+                MessageBox.Show(message.Content.ReadAsStringAsync().Result, message.StatusCode.ToString());
                 RefreshList();
             }
         }
@@ -64,7 +64,7 @@ namespace ExilianWinterCreativeCompetition2023.Frontend
                 Description = DescriptionTextBox.Text
             };
             HttpResponseMessage message = restController.SaveNewAnimal(animal).Result;
-            MessageBox.Show(message.Content.ReadAsStringAsync().Result, message.Content.ReadAsStringAsync().Result);
+            MessageBox.Show(message.Content.ReadAsStringAsync().Result, message.StatusCode.ToString());
             RefreshList();
         }
 
@@ -75,7 +75,7 @@ namespace ExilianWinterCreativeCompetition2023.Frontend
                 selectedAnimal.Name = NameTextBox.Text;
                 selectedAnimal.Description = DescriptionTextBox.Text;
                 HttpResponseMessage message = restController.UpdateAnimal(selectedAnimal).Result;
-                MessageBox.Show(message.Content.ReadAsStringAsync().Result, message.Content.ReadAsStringAsync().Result);
+                MessageBox.Show(message.Content.ReadAsStringAsync().Result, message.StatusCode.ToString());
                 RefreshList();
             }
             
