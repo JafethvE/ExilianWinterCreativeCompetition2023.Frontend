@@ -1,11 +1,11 @@
 # The Hibernation database
 
 ## What it is
-This is a C#/.NET frontend application to go with [this backend](https://github.com/JafethvE/ExilianWinterCreativeCompetition2023).
+This is a frontend application to go with [this backend](https://github.com/JafethvE/ExilianWinterCreativeCompetition2023).
 It offers a simple GUI to view and modify the entries in the backend's database.
 
 ## How it works
-This application uses the backend's REST interface to view, modify, and/or delete database entries.
+This is a C#/.NET application that uses the backend's REST interface to view, modify, and/or delete database entries.
 
 ## Running it
 
@@ -13,7 +13,7 @@ This application uses the backend's REST interface to view, modify, and/or delet
 For the duration of the contest I will be hosting an instance of the backend myself.
 Therefore you will only need this programme to try it out.
 
-To run you can download the release from [dropbox](https://www.dropbox.com/scl/fo/bw1pov9fgrnqv9vsq5myh/h?rlkey=jzclb65byxowpzqwvvvvpb0wu&dl=0).
+To run this application you download the release from [dropbox](https://www.dropbox.com/scl/fo/bw1pov9fgrnqv9vsq5myh/h?rlkey=jzclb65byxowpzqwvvvvpb0wu&dl=0).
 Download and extract this entire folder and run the ExilianWinterCreativeCompetition2023.Frontend.exe
 
 ### After the contest
