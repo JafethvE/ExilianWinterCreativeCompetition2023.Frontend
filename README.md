@@ -2,7 +2,7 @@
 
 ## What it is
 This is a frontend application to go with [this backend](https://github.com/JafethvE/ExilianWinterCreativeCompetition2023).
-It offers a simple GUI to view and modify the entries in the backend's database.
+It offers a simple interface to a database containing a table of animals that hibernate. It can be called to create new animal entries, and modify or delete existing ones
 
 ## How it works
 This is a C#/.NET application that uses the backend's REST interface to view, modify, and/or delete database entries.
